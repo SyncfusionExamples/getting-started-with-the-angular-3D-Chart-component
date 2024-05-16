@@ -1,0 +1,11 @@
+<div class="wrapper">
+<ejs-chart3d width="800px" [primaryXAxis]="primaryXAxis" depth="200"
+             tilt="20" rotation="10" title="Sales Analysis"
+             [legendSettings] = "legend" [tooltip]="tooltip">
+  <e-chart3d-series-collection>
+    <e-chart3d-series [dataSource]="dataSource" xName="x"
+                      yName="y" type="Column" name="Sales" 
+                      [dataLabel]="dataLabel"></e-chart3d-series>
+  </e-chart3d-series-collection>
+</ejs-chart3d>
+</div>
